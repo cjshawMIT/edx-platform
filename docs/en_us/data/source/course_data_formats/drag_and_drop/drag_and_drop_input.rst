@@ -135,8 +135,10 @@ Correct answer format
 
 (NOTE: For specifying answers for targets on draggables please see next section.)
 
-There are two correct answer formats: short and long
-If short from correct answer is mapping of 'draggable_id' to 'target_id'::
+There are two correct answer formats: short and long.
+If short from correct answer is mapping of 'draggable_id' to 'target_id' (like "exact"
+rule in long format). The target format is [[x, y], w] (with the assumption that the 
+target is a square, centered at x and y-- NOTE this is different than for the long format):::
 
     correct_answer = {'grass':     [[300, 200], 200], 'ant': [[500, 0], 200]}
     correct_answer = {'name4': 't1', '7': 't2'}
